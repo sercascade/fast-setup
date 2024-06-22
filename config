@@ -1,0 +1,58 @@
+# Example binds
+bindsym $mod+Return exec $terminal
+bindsym $mod+Q kill
+bindsym $mod+M exec --no-startup-id i3-msg exit
+bindsym $mod+N exec $fileManager
+bindsym $mod+V floating toggle
+bindsym $mod+J exec blueberry
+bindsym $mod+K exec nm-connection-editor
+bindsym $mod+L exec alacritty -e alsamixer
+bindsym $mod+R exec --no-startup-id $menu
+bindsym $mod+P pseudotiling_mode
+bindsym $mod+apostrophe layout toggle split
+bindsym $mod+semicolon exec gnome-terminal -- alsamixer
+bindsym $mod+S exec code
+bindsym $mod+X exec firefox
+bindsym $mod+y exec swaybg -i $wallpaper
+
+# Move focus with $mod + arrow keys
+bindsym $mod+Left focus left
+bindsym $mod+Right focus right
+bindsym $mod+Up focus up
+bindsym $mod+Down focus down
+
+# Switch workspaces with $mod + [1-9, 0]
+bindsym $mod+1 workspace number 1
+bindsym $mod+2 workspace number 2
+bindsym $mod+3 workspace number 3
+bindsym $mod+4 workspace number 4
+bindsym $mod+5 workspace number 5
+bindsym $mod+6 workspace number 6
+bindsym $mod+7 workspace number 7
+bindsym $mod+8 workspace number 8
+bindsym $mod+9 workspace number 9
+bindsym $mod+0 workspace number 10
+
+# Move active window to a workspace with $mod + SHIFT + [1-9, 0]
+bindsym $mod+Shift+1 move container to workspace number 1
+bindsym $mod+Shift+2 move container to workspace number 2
+bindsym $mod+Shift+3 move container to workspace number 3
+bindsym $mod+Shift+4 move container to workspace number 4
+bindsym $mod+Shift+5 move container to workspace number 5
+bindsym $mod+Shift+6 move container to workspace number 6
+bindsym $mod+Shift+7 move container to workspace number 7
+bindsym $mod+Shift+8 move container to workspace number 8
+bindsym $mod+Shift+9 move container to workspace number 9
+bindsym $mod+Shift+0 move container to workspace number 10
+
+# Example special workspace (scratchpad)
+bindsym $mod+S move scratchpad
+bindsym $mod+Shift+S move container to scratchpad
+
+# Scroll through existing workspaces with $mod + scroll
+bindsym $mod+Button4 workspace prev
+bindsym $mod+Button5 workspace next
+
+# Move/resize windows with $mod + Left Mouse Button (LMB) and Right Mouse Button (RMB) dragging
+bindsym --whole-window $mod+A move
+bindsym --whole-window $mod+Z resize
