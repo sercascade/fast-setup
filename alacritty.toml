@@ -22,7 +22,7 @@ yellow = "#E0E0E0"
 
 [colors.primary]
 background = "#1F1F1F"
-foreground = "#EOEOEO"
+foreground = "#E0E0E0"
 
 [font]
 size = 13.0
